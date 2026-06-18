@@ -7,7 +7,7 @@ function App() {
   const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
-    fetch(`/api/Data/?page=${currentPage}&search=${search}`)
+    fetch(`https://eb-backend.onrender.com/api/Data/?page=${currentPage}&search=${search}`)
       .then((res) => res.json())
       .then((data) => {
         setUsers(data.data);

@@ -8,7 +8,7 @@ function Login() {
 const Handle = async () => {
   try {
     const response = await fetch(
-      "/api/Login/",
+      "https://eb-backend.onrender.com/api/Login/",
       {
         method: "POST",
         headers: {
