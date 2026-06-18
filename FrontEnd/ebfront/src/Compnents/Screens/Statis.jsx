@@ -14,7 +14,7 @@ function Statis() {
   const fetchData = async (type) => {
     try {
       const response = await fetch(
-        `https://eb-backend.onrender.com/api/connectionRequest/?type=${type}`
+        `https://eb-project-hy27.onrender.com/api/connectionRequest/?type=${type}`
       );
 
       const result = await response.json();
